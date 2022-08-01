@@ -43,19 +43,25 @@ public class peer {
 		for(int i =1; i<=100; i++) {
 			String num = String.valueOf(i);
 			String dog = String.valueOf(placement);
-			if(Math.abs(i) % 10 == 1) {
-				str.add(num + "st"); 
-			}
-			else if(Math.abs(i) % 10 == 2) {
-				str.add(num + "nd");
-
-			}
-			else if(Math.abs(i) % 10 == 3) {
-				str.add(num + "rd");
-			}
-			else {
+			
+			if (i == 11 || i == 12 || i == 13) {
 				str.add(num + "th");
+			}else {
+				if(Math.abs(i) % 10 == 1) {
+					str.add(num + "st"); 
+				}
+				else if(Math.abs(i) % 10 == 2) {
+					str.add(num + "nd");
+
+				}
+				else if(Math.abs(i) % 10 == 3) {
+					str.add(num + "rd");
+				}
+				else {
+					str.add(num + "th");
+				}
 			}
+			
 			
 			str.remove(dog + "st");
 			str.remove(dog + "nd");

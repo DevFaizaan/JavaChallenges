@@ -14,9 +14,7 @@ public class Garage {
 	
 	void deleteVehicle(Vehicle v) {
 		
-			this.vehicle.remove(v);
-		
-		
+			this.vehicle.remove(v);	
 	}
 	
 	void deleteVehicle(int ID) {
